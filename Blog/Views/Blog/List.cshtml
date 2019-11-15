@@ -1,0 +1,19 @@
+@using BlogListViewModel = Blog.View_Models.BlogListViewModel
+@model BlogListViewModel
+
+    <h1>@Model.CurrentTitle</h1>
+    @foreach (var blog in Model.Blogs)
+    {
+        <div class="thumbnail">
+        <img src="@blog.ImageThumbnailUrl" alt="">
+            @* <h2>@blog.BlogId </h2> *@
+        <h3>
+            <a asp-controller="Blog" asp-action="Details" asp-route-id="@blog.BlogId">@blog.Name</a>
+        </h3>
+            <h3>@blog.ShortDescription</h3>
+            @* <h3>@blog.ActualBlog</h3> *@
+        @* <h4>@blog.Writer</h4> *@
+         @* <h4>@blog.User</h4> *@
+
+        </div>
+    }

@@ -1,0 +1,33 @@
+@* @page *@
+@* @model Blog *@
+@using BlogListViewModel = Blog.View_Models.BlogListViewModel
+@model BlogListViewModel
+
+
+<p>This will be the blog detail page</p>
+
+@*  @foreach (var blog in Model.Blogs) *@
+@*  { *@
+@*      <div class="full-blog"> *@
+@*          <img src="@blog.ImageUrl"alt=""> *@
+@*          <div class="info"> *@
+@*              <h3>@blog.Name</h3> *@
+@*              <h2>@blog.User</h2> *@
+@*              <p>@blog.ActualBlog</p> *@
+@*          </div> *@
+@* *@
+@*      </div> *@
+@*  } *@
+
+@* possibly use the below when using info from the database to show detail of one blog *@
+@* <h2>@Model.Name</h2> *@
+@* *@
+@* <div class="thumbnail"> *@
+@*     <img alt="@Model.Name" src="@Model.ImageUrl"/> *@
+@*     <div class="full-blog"> *@
+@*         <h3>@Model.Name</h3> *@
+@*         <h2>@Model.User</h2> *@
+@*         <p>@Model.ActualBlog</p> *@
+@*     </div> *@
+@* *@
+@* </div> *@
